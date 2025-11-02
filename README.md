@@ -1,16 +1,40 @@
-# React + Vite
+# Leonard Portfolio V2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 **Live Demo:** [leonn09.github.io/leonard-portfolio-v2](https://leonn09.github.io/leonard-portfolio-v2/)
 
-Currently, two official plugins are available:
+This is the **React + Tailwind** version of my personal portfolio website — rebuilt from scratch using **Vite** for faster loading and better structure.  
+It showcases my web development projects, skills, and learning journey with a clean dark/light mode design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+### ⚡ Features
+- Built with **React 19**, **Tailwind CSS 4**, and **Vite**
+- Dynamic **project modals** with live previews and source code tabs (HTML/CSS/JS)
+- **Copy-to-Clipboard** button for code snippets
+- **Dark mode** with hover transitions
+- Responsive and lightweight design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+### 🛠️ Tech Stack
+React · Tailwind CSS · Vite · JavaScript (ES6) · Font Awesome · D3.js (future) · GitHub Pages
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+### ⚙️ Setup
+```bash
+git clone https://github.com/leonn09/leonard-portfolio-v2.git
+cd leonard-portfolio-v2
+npm install
+npm run dev
+```
+
+To deploy:
+```bash
+npm run deploy
+```
+
+---
+
+📧 **Contact:** leonn09@gmail.com  
+🐙 **GitHub:** [@leonn09](https://github.com/leonn09)
