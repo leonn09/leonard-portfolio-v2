@@ -1,8 +1,10 @@
+import LeoLogo from '/assets/Leo.svg'
+
 const Header = () => {
 
   return (
     <header className="flex justify-center h-[9rem] text-black dark:text-white">
-      <img src="/assets/Leo.svg" alt="Leonard Logo" className="w-32 h-28 mx-0 mt-7 "/>
+      <img src={LeoLogo} alt="Leonard Logo" className="w-32 h-28 mx-0 mt-7 "/>
       <div className="mt-6">
         <div className="desc flex flex-col">
           <h1 className="text-3xl font-thin">

@@ -15,7 +15,7 @@ const Modal = (props) => {
 
       if (!show || !data) return;
 
-      const path = `../assets/projects/${data.category}/${data.project}`;
+      const path = `${import.meta.env.BASE_URL}assets/projects/${data.category}/${data.project}`;
       
       fetch(`${path}/index.html`)
         .then(response => response.text())
@@ -77,7 +77,7 @@ const Modal = (props) => {
           </div>
           <iframe
             className="w-[20rem] h-[15rem] md:w-[42rem] md:h-[20rem]"
-            src={`../assets/projects/${data.category}/${data.project}/index.html`}
+            src={`${import.meta.env.BASE_URL}assets/projects/${data.category}/${data.project}/index.html`}
           />
           <div className="flex justify-center p-2">
             <button

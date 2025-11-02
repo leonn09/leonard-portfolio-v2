@@ -81,7 +81,7 @@ const ProjectContainer = () => {
                     <img
                       loading="eager"
                       fetchpriority="high"
-                      src={`../assets/images/${category.toLowerCase().replace(/ /g, "-")}/${projects[category][project]["image"]}`}
+                      src={`${import.meta.env.BASE_URL}assets/images/${category.toLowerCase().replace(/ /g, "-")}/${projects[category][project]["image"]}`}
                       className="w-[22rem] h-48 object-cover rounded-xl"
                       alt={projects[category][project]["alt"]}
                     />
@@ -111,7 +111,7 @@ const ProjectContainer = () => {
                   <img
                     loading="eager"
                     fetchpriority="high"
-                    src={`../assets/images/${active.toLowerCase().replace(/ /g, "-")}/${projects[active][project]["image"]}`}
+                    src={`${import.meta.env.BASE_URL}assets/images/${active.toLowerCase().replace(/ /g, "-")}/${projects[active][project]["image"]}`}
                     className="w-[22rem] h-48 object-cover rounded-xl"
                     alt={projects[active][project]["alt"]}
                   />
