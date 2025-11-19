@@ -11,7 +11,7 @@ const OverlayBg = () => {
                     backgroundSize: '10px 10px',
                     }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-white via-white/0 to-white dark:from-gray-950 dark:via-gray-950/0 dark:to-gray-950" />
+                <div className="absolute inset-0 bg-linear-to-br from-white via-white/0 to-white dark:from-gray-950 dark:via-gray-950/0 dark:to-gray-950" />
             </div>
         </>,
     document.getElementById('overlayBg')

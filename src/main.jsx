@@ -7,6 +7,7 @@ import OverlayBg from './OverlayBG.jsx'
 import AboutMe from './AboutMe.jsx'
 import ContactMe from './ContactMe.jsx'
 import React, { Suspense } from "react";
+import Pricing from './Pricing.jsx'
 
 const ThemeSwitcher = React.lazy(() => import("./ThemeSwitcher.jsx"));
 const Skills = React.lazy(() => import("./Skills.jsx"));
@@ -24,6 +25,7 @@ createRoot(document.getElementById('root'))
       <Suspense fallback={null}>
         <Skills />
       </Suspense>
+      <Pricing />
       <ContactMe />
     </StrictMode>,
   )

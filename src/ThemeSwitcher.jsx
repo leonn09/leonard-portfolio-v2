@@ -21,7 +21,7 @@ const ThemeSwitcher = () => {
   };
 
   return (
-    <div className="fixed top-4 right-4 z-50 flex justify-end m-2">
+    <div className="fixed top-4 right-3 z-50 flex justify-end m-2">
       <button
         onClick={toggleDarkMode}
         aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
