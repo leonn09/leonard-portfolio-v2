@@ -19,7 +19,8 @@ const ProjectContainer = () => {
     setIsModalOpen(!isModalOpen);
   }
 
-  return <section id="my-projects" className="text-black dark:text-white">
+  return <section id="my-projects" className="text-black dark:text-white pt-36">
+    <h2 className="text-center text-3xl font-bold sm:text-4xl lg:text-4xl">My Projects</h2>
     <div className="mt-2 flex justify-center">
       {
         Object.keys(projects).map((category, i) => {
@@ -31,7 +32,7 @@ const ProjectContainer = () => {
           >
             <span className="text-lg">{category}</span>
             <div
-              className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]"
+              className="absolute inset-0 flex h-full w-full justify-center transform-[skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:transform-[skew(-13deg)_translateX(100%)]"
             >
               <div className="relative h-full w-10 bg-white/20"></div>
             </div>
@@ -44,7 +45,7 @@ const ProjectContainer = () => {
           >
             <span className="text-lg">{category}</span>
             <div
-              className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]"
+              className="absolute inset-0 flex h-full w-full justify-center transform-[skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:transform-[skew(-13deg)_translateX(100%)]"
             >
               <div className="relative h-full w-10 bg-white/20"></div>
             </div>
@@ -59,7 +60,7 @@ const ProjectContainer = () => {
       >
         <span className="text-lg">ALL</span>
         <div
-          className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]"
+          className="absolute inset-0 flex h-full w-full justify-center transform-[skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:transform-[skew(-13deg)_translateX(100%)]"
         >
           <div className="relative h-full w-10 bg-white/20"></div>
         </div>
@@ -75,21 +76,21 @@ const ProjectContainer = () => {
                     onClick={() => {
                       toggleModal(category.toLowerCase(), project.toLowerCase().replace(/ /g, "-"));
                     }}
-                    className={`w-[23rem] h-[22rem] px-4 py-4 mx-2 mt-3 mb-1 flex flex-col group/button relative rounded-xl overflow-hidden backdrop-blur-lgtext-base font-semibold transition-all duration-300 ease-in-out hover:shadow-xl hover:shadow-gray-600/50 border dark:border-white/20 dark:bg-[#3d3c3d]/50`}
+                    className={`w-92 h-88 px-4 py-4 mx-2 mt-3 mb-1 flex flex-col group/button relative rounded-xl overflow-hidden backdrop-blur-lgtext-base font-semibold transition-all duration-300 ease-in-out hover:shadow-xl hover:shadow-gray-600/50 border dark:border-white/20 dark:bg-[#3d3c3d]/50`}
                     >
                   <div>
                     <img
                       loading="eager"
-                      fetchpriority="high"
+                      fetchPriority="high"
                       src={`${import.meta.env.BASE_URL}assets/images/${category.toLowerCase().replace(/ /g, "-")}/${projects[category][project]["image"]}`}
-                      className="w-[22rem] h-48 object-cover rounded-xl"
+                      className="w-88 h-48 object-cover rounded-xl"
                       alt={projects[category][project]["alt"]}
                     />
                     <h3 className="m-3 text-[1.1rem] font-semibold">{project}</h3>
                     <h4 className="text-[0.9rem]">{projects[category][project]["description"]}</h4>
                   </div>
                   <div
-                    class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]"
+                    className="absolute inset-0 flex h-full w-full justify-center transform-[skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:transform-[skew(-13deg)_translateX(100%)]"
                   >
                     <div className="relative h-full w-10 bg-white/20"></div>
                   </div>
@@ -106,20 +107,20 @@ const ProjectContainer = () => {
                   onClick={() => {
                       toggleModal(active.toLowerCase(), project.toLowerCase().replace(/ /g, "-"));
                     }}
-                  className={`w-[23rem] h-[22rem] px-4 py-4 mx-2 mt-3 mb-1 flex flex-col group/button relative rounded-xl overflow-hidden backdrop-blur-lgtext-base font-semibold transition-all duration-300 ease-in-out hover:shadow-xl hover:shadow-gray-600/50 border dark:border-white/20 dark:bg-[#3d3c3d]/50`}>
+                  className={`w-92 h-88 px-4 py-4 mx-2 mt-3 mb-1 flex flex-col group/button relative rounded-xl overflow-hidden backdrop-blur-lgtext-base font-semibold transition-all duration-300 ease-in-out hover:shadow-xl hover:shadow-gray-600/50 border dark:border-white/20 dark:bg-[#3d3c3d]/50`}>
                 <div>
                   <img
                     loading="eager"
-                    fetchpriority="high"
+                    fetchPriority="high"
                     src={`${import.meta.env.BASE_URL}assets/images/${active.toLowerCase().replace(/ /g, "-")}/${projects[active][project]["image"]}`}
-                    className="w-[22rem] h-48 object-cover rounded-xl"
+                    className="w-88 h-48 object-cover rounded-xl"
                     alt={projects[active][project]["alt"]}
                   />
                   <h3 className="m-3 text-[1.1rem] font-semibold">{project}</h3>
                   <h4 className="text-[0.9rem]">{projects[active][project]["description"]}</h4>
                 </div>
                 <div
-                  className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]"
+                  className="absolute inset-0 flex h-full w-full justify-center transform-[skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:transform-[skew(-13deg)_translateX(100%)]"
                 >
                   <div className="relative h-full w-10 bg-white/20"></div>
                 </div>

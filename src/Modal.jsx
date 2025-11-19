@@ -67,7 +67,7 @@ const Modal = (props) => {
 
     return ReactDom.createPortal(
     <>
-      <div className="z-[1000] inset-0 fixed flex items-center justify-center text-white bg-zinc-200/90 dark:bg-[#272727]/90">
+      <div className="z-1000 inset-0 fixed flex items-center justify-center text-white bg-zinc-200/90 dark:bg-[#272727]/90">
         <div className="p-3 rounded-xl flex flex-col items-center bg-[#3d3c3d]">
           <div className="flex mb-3">
             <h2>{data.project}</h2>
@@ -76,7 +76,7 @@ const Modal = (props) => {
             </button>
           </div>
           <iframe
-            className="w-[20rem] h-[15rem] md:w-[42rem] md:h-[20rem]"
+            className="w-[20rem] h-60 md:w-2xl md:h-80"
             src={`${import.meta.env.BASE_URL}assets/projects/${data.category}/${data.project}/index.html`}
           />
           <div className="flex justify-center p-2">
@@ -102,7 +102,7 @@ const Modal = (props) => {
             }
           </div>
           <div className="overflow-x-auto">
-            <pre className="w-[20rem] h-[15rem] md:w-[42rem] md:h-[20rem] text-sm overflow-x-scroll bg-zinc-900/50">
+            <pre className="w-[20rem] h-60 md:w-2xl md:h-80 text-sm overflow-x-scroll bg-zinc-900/50">
               <code>{codeShow}</code>
             </pre>
           </div>

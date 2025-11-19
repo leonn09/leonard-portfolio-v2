@@ -11,7 +11,7 @@ It showcases my web development projects, skills, and learning journey with a cl
 - Built with **React 19**, **Tailwind CSS 4**, and **Vite**
 - Dynamic **project modals** with live previews and source code tabs (HTML/CSS/JS)
 - **Copy-to-Clipboard** button for code snippets
-- **Dark mode** with hover transitions
+- **Dark mode** switch
 - Responsive and lightweight design
 
 ---
