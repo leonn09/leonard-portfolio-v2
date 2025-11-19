@@ -32,6 +32,7 @@ const Header = () => {
         <img src={LeoLogo} alt="Leonard Logo" className={`${isNavOpen ? "w-16 h-14" : isScrolled ? "w-16 h-14" : "w-32 h-28"}`}/>
 
         <button
+            aria-label="Toggle navigation menu"
             className={`ml-3 HAMBURGER-ICON space-y-2 ${isNavOpen ? "block" : isScrolled ? "block sm:hidden" : "hidden"}`}
             onClick={() => setIsNavOpen((isNavOpen) => !isNavOpen)}
           >
@@ -53,10 +54,10 @@ const Header = () => {
       <nav className="">
 
         <ul className={`font-semibold ${isNavOpen ? "p-4 flex flex-col justify-center items-center" : isScrolled ? "hidden sm:flex gap-2" : ""}`}>
-          <li><button onClick={() => setIsNavOpen(false)}><a href="#my-projects" className={linkClass}>My Projects</a></button></li>
-          <li><button onClick={() => setIsNavOpen(false)}><a href="#about-me" className={linkClass}>About Me</a></button></li>
-          <li><button onClick={() => setIsNavOpen(false)}><a href="#pricing" className={linkClass}>Pricing</a></button></li>
-          <li><button onClick={() => setIsNavOpen(false)}><a href="#mail-link" className={linkClass}>Contact me</a></button></li>
+          <li><a onClick={() => setIsNavOpen(false)} href="#my-projects" className={linkClass}>My Projects</a></li>
+          <li><a onClick={() => setIsNavOpen(false)} href="#about-me" className={linkClass}>About Me</a></li>
+          <li><a onClick={() => setIsNavOpen(false)} href="#pricing" className={linkClass}>Pricing</a></li>
+          <li><a onClick={() => setIsNavOpen(false)} href="#mail-link" className={linkClass}>Contact me</a></li>
         </ul>
 
       </nav>
