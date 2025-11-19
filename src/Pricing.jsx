@@ -6,7 +6,7 @@ const Pricing= () => {
   const priceClass = "m-2 mt-1 text-4xl font-bold text-center";
   const perClass = "text-sm font-semibold";
   const buttonClass = "w-48 m-3 p-2 self-center border rounded group-hover:bg-zinc-400/50";
-  const descClass = "text-center text-sm text-zinc-400 font-medium"
+  const descClass = "text-center text-sm text-zinc-700 font-medium"
   const includeClass = "flex flex-col justify-center items-start mt-2 ml-1 text-sm";
 
   return (
@@ -30,7 +30,7 @@ const Pricing= () => {
             <button className={`bg-zinc-600/80 transition hover:scale-105 ${cardClass}`}>
                 <div className="flex justify-center gap-2"><h3 className={cardTitleClass}>Standard</h3><span className="p-1 text-sm border rounded">Most Popular</span></div>
                 <p className={priceClass}>$150<span className={perClass}>/project</span></p>
-                <p className={descClass}>There are many variations available, but the majority have suffered.</p>
+                <p className={`text-center text-sm text-zinc-200 font-medium`}>There are many variations available, but the majority have suffered.</p>
                 <div className={buttonClass}>Choose this plan</div>
                 <p>Includes:</p>
                 <div className={includeClass}>
